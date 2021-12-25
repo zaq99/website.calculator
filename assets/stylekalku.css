@@ -1,0 +1,122 @@
+@import url('https://fonts.googleapis.com/css2?family=Quicksand:wght@400;700&family=Righteous&display=swap');
+
+
+* {
+    box-sizing: border-box;
+}
+
+body {
+    background-color: #240046;
+    font-family: 'Quicksand', sans-serif;
+    color: white;
+}
+
+h2 {
+    color: white;
+}
+
+.display {
+    background-color: #10002b;
+}
+
+h1 {
+    margin-right: 10px;
+}
+
+.flex-container-column {
+    display: flex;
+    flex-direction: column;
+
+    /*  property pendukung */
+    max-width: 800px;
+    margin: auto;
+    text-align: right;
+}
+
+.card {
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+    border-radius: 5px;
+    padding: 30px;
+    margin-top: 20px;
+}
+
+.flex-container-row {
+    display: flex;
+}
+
+.button {
+    flex-basis: 25%;
+
+    /* properti pendukung */
+    font-size: 1.5em;
+    text-align: center;
+    padding: 40px;
+    border: 1px solid #10002b;
+    background-color: #9d4edd;
+    cursor: pointer;
+}
+
+.button:hover {
+    font-weight: bold;
+}
+
+@media screen and (max-width:513px) {
+    .button {
+        padding: 10px;
+    }
+}
+
+.double {
+    flex-basis: 50%;
+}
+
+.operator,
+.negative {
+    background: #5a189a;
+}
+
+.equals {
+    background: #7b2cbf;
+}
+
+.history {
+    width: 100%;
+    margin: 30px auto 0 auto;
+    overflow: auto;
+}
+
+table {
+    border-collapse: collapse;
+    border-spacing: 0;
+    width: 100%;
+    border: 1px solid #1b3a4b;
+}
+
+th,
+td {
+    text-align: center;
+    padding: 16px;
+}
+
+th {
+    background-color: #9d4edd;
+    color: white;
+}
+
+tr:nth-child(even) {
+    background-color: #10002b;
+}
+
+@media screen and(max-width: 513px) {
+    .button {
+        padding: 10px;
+    }
+
+    .history {
+        width: 100%;
+    }
+
+    .history table th {
+        font-size: 1px;
+    }
+}
